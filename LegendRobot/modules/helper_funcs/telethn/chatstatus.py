@@ -1,5 +1,5 @@
-from LegendRobot.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
-from LegendRobot import DRAGONS
+from Agora-Bot.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
+from Agora-Bot import DRAGONS
 from telethon.tl.types import ChannelParticipantsAdmins
 
 
@@ -42,13 +42,13 @@ async def is_user_admin(user_id: int, chat_id):
     return status
 
 
-async def LegendRobot_is_admin(chat_id: int):
+async def Agora-Bot_is_admin(chat_id: int):
     status = False
-    LegendRobot = await telethn.get_me()
+    Agora-Bot = await telethn.get_me()
     async for user in telethn.iter_participants(
         chat_id, filter=ChannelParticipantsAdmins
     ):
-        if LegendRobot.id == user.id:
+        if Agora-Bot.id == user.id:
             status = True
             break
     return status
