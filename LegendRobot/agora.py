@@ -1,10 +1,10 @@
 from telethon import events
-from LegendRobot import telethn
+from Agora-Bot import telethn
 
 """Triggers start command in pm and in groupchats"""
 
 
-def LegendRobot(**args):
+def Agora(**args):
     """New message."""
     pattern = args.get("pattern", None)
     r_pattern = r"^[/!]"
